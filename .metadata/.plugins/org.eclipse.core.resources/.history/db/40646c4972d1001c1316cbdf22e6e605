@@ -1,0 +1,19 @@
+package dao;
+
+import model.UserPojo;
+
+public class UserDaoImpl implements UserDao{
+
+	public UserPojo addUser(UserPojo userpojo) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public UserPojo loginUser(String username, String password) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+
+}

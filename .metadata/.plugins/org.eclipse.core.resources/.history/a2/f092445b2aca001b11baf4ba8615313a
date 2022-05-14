@@ -1,0 +1,11 @@
+package com.example.hello_world;
+
+class Geekyshows 
+{
+	public static void main(String args[])
+	{
+		int num = 10;
+		System.out.print("geekyshows");
+		System.out.print("geekyshows" + num);
+	}
+}

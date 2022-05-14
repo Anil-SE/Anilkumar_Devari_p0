@@ -1,0 +1,10 @@
+package model;
+
+public class UserPojo {
+	
+	private String userName;
+	private String emailId;
+	private String password;
+	private long phoneNo;
+
+}

@@ -1,0 +1,25 @@
+package com.example.hello_world;
+
+class Addition
+{
+	int a;
+	int b;
+	int total;
+	void add()
+	{
+		total = a + b;
+		System.out.println(total);
+	}
+	
+	
+}
+class Geekyshows
+{
+	public static void main(String args[]) 
+	{
+		Addition obj1 = new Addition();
+		obj1.a = 10;
+		obj1.b = 20;
+		obj1.add();
+	}
+}

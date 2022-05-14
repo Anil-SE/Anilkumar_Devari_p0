@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="java.util.Vector"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="jdk.nashorn.internal.ir.IndexNode"/>
+    <fullyQualifiedTypeName name="dao.RegistrationDao"/>
+    <fullyQualifiedTypeName name="dao.RegistrationDaoCollectionImpl"/>
+    <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="service.RegistrationService"/>
+    <fullyQualifiedTypeName name="service.RegistrationServiceImpl"/>
+    <fullyQualifiedTypeName name="model.RegistrationPojo"/>
+    <fullyQualifiedTypeName name="java.lang.Class"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="dao.DBUtil"/>
+    <fullyQualifiedTypeName name="java.beans.Statement"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="dao.UserDao"/>
+    <fullyQualifiedTypeName name="dao.UserDaoImpl"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="exception.SystemException"/>
+    <fullyQualifiedTypeName name="javax.print.attribute.standard.JobOriginatingUserName"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="model.UserPojo"/>
+    <fullyQualifiedTypeName name="service.UserService"/>
+    <fullyQualifiedTypeName name="service.UserServiceImpl"/>
+</qualifiedTypeNameHistroy>

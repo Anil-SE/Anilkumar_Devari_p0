@@ -1,0 +1,65 @@
+package presentation;
+
+import java.util.Scanner;
+
+import dao.UserDao;
+import dao.UserDaoImpl;
+import exception.SystemException;
+import model.UserPojo;
+import service.UserService;
+import service.UserServiceImpl;
+
+public class BankingApplicationSystem {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		UserService testuserservice = new UserServiceImpl();
+		char proceed = 'y';
+		
+		while(proceed == 'y') {
+			System.out.println("*****************************");
+			System.out.println("PRODUCT MANAGEMENT SYSTEM");
+			System.out.println("*****************************");
+			System.out.println("1. Register");
+			System.out.println("2. Login");
+			System.out.println("*****************************");
+			System.out.println("Please enter an option:");
+			int option = scan.nextInt();
+			System.out.println("*****************************");
+			switch(option) {
+					
+					case 1:
+						UserPojo newUserPojo = new UserPojo();
+						System.out.println("Please enter your UserName : ");
+						scan.nextLine();
+						newUserPojo.setUserName(scan.nextLine());
+						System.out.println("Please enter password : ");
+						newUserPojo.setPassword(scan.nextLine());
+						System.out.println("Please enter emailid : ");
+						newUserPojo.setEmailId(scan.nextLine());
+						System.out.println("Please enter password : ");
+						newUserPojo.setPassword(scan.nextLine());
+						UserPojo userPojo = null;
+						try {
+							userPojo = testuserservice.addUser(userPojo);
+						} catch (SystemException e) {
+							System.out.println(e.getMessage());
+							break;
+						}
+						System.out.println("*****************************");
+						System.out.println("New product added successfully! \nProduct ID is :" + newUserPojo.getUserName());
+						System.out.println("*****************************");
+						break;
+						
+						
+			}
+		}
+		System.out.println("*******************************************************************");
+		System.out.println("Thank you for using Product Management System!!");
+		System.out.println("*******************************************************************");
+		System.exit(0);
+
+	}
+
+}

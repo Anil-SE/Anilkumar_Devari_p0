@@ -1,0 +1,42 @@
+package dao;
+
+import java.sql.Statement;
+
+import exception.SystemException;
+
+import java.sql.SQLException;
+
+import java.sql.Connection;
+
+import model.UserPojo;
+
+public class UserDaoImpl implements UserDao{
+	
+	public UserPojo addUser(UserPojo userPojo)throws SystemException {
+		
+		Connection conn;
+		
+		try {
+			
+			conn = DBUtil.makeConnection();
+			Statement stmt = conn.createStatement();
+			String query = "INSERT INTO user_details(user_name, email_id, password, phone_no) VALUES ('"+userPojo.getUserName()+"', '"+userPojo.getEmailId()+"', "+userPojo.getPassword()+", '"+userPojo.getPhoneNo()+"')";
+			int rowsAffected = stmt.executeUpdate(query);
+			
+		} catch (SQLException e) {
+			throw new SystemException();
+		}
+		return userPojo;
+		
+		
+		
+	}
+
+	public UserPojo loginUser(String username, String password) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+
+}

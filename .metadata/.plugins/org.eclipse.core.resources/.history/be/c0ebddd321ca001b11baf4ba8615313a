@@ -1,0 +1,9 @@
+package com.example.hello_world;
+
+class Geekyshows 
+{
+	public static void main(String args[])
+	{
+		System.out.println("geekyshows")
+	}
+}

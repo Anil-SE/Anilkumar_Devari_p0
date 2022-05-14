@@ -1,0 +1,14 @@
+package presentation;
+
+import dao.UserDao;
+import dao.UserDaoImpl;
+
+public class BankingApplicationSystem {
+
+	public static void main(String[] args) {
+		
+		UserDao testUserDao = new UserDaoImpl();
+
+	}
+
+}
